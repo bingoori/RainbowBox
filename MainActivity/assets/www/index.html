@@ -90,7 +90,7 @@
 <script src="js/vodMain.js"></script>
 <script>
 	$(function() {
-		vodMain.vodMainForm("http://52.79.161.93");
+		vodMain.vodMainForm("http://URL");
 		var user = '${user.id}';
 		alert(user);
 		if (user == null || user == '${user.id}' || user == '') {
@@ -102,41 +102,41 @@
 	});
 	$('#purchasetab').click(function(e) {
 		e.preventDefault();
-		vodMain.vodPurchase("http://52.79.161.93");
+		vodMain.vodPurchase("http://URL");
 	});
 	$('#new').click(function(e) {
 		e.preventDefault();
-		vodMain.vodAtLeastForm("http://52.79.161.93");
+		vodMain.vodAtLeastForm("http://URL");
 	});
 	$('#normal').click(function(e) {
 		e.preventDefault();
-		vodMain.vodCommonForm("http://52.79.161.93");
+		vodMain.vodCommonForm("http://URL");
 	});
 	$('#free').click(function(e) {
 		e.preventDefault();
-		vodMain.vodFreeForm("http://52.79.161.93");
+		vodMain.vodFreeForm("http://URL");
 	});
 	$('#logoutBtn').click(function(e) {
 		e.preventDefault();
-		location.href = "http://52.79.161.93/member/vod_logout";
+		location.href = "http://URL/member/vod_logout";
 	});
 	$('#loginForm').click(function(e) {
 		e.preventDefault();
-		vodMain.vodLoginForm("http://52.79.161.93");
+		vodMain.vodLoginForm("http://URL");
 
 	});
 	$('#joinForm').click(function(e) {
 		e.preventDefault();
-		vodMain.vodJoinForm("http://52.79.161.93");
+		vodMain.vodJoinForm("http://URL");
 	});
 	$('#home').click(function(e) {
 		e.preventDefault();
-		vodMain.vodMainForm("http://52.79.161.93");
+		vodMain.vodMainForm("http://URL");
 	});
 	$('#search').click(function(e) {
 		e.preventDefault();
 		document.getElementById('indexFooter').style.display = 'none';
-		vodMain.vodSearchForm("http://52.79.161.93");
+		vodMain.vodSearchForm("http://URL");
 	});
 	$('#info').click(function(e) {
 		e.preventDefault();
@@ -163,7 +163,7 @@
 			// 다른 사람들은 각자 화면을 요청하는 AJAX펑션을 넣으면 되겠다.
 		} else {
 			// 히스토리에 정보가 없을경우 메인화면으로 보내준다. 
-			location.href = "http://52.79.161.93 /mobile/";
+			location.href = "http://URL/mobile/";
 		}
 	});
 </script>
